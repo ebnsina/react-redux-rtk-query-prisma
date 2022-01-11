@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: #e7e6eb;
+  color: #211d68;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: solid 1px #dbdaef;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6c5fbc;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #6c5fbc;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #dbdaef;
+  color: #44476c;
+}
+
+.btn-link {
+  text-decoration: none;
+  border: solid 1px #6c5fbc;
+  color: #6c5fbc;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main,
+.form,
+.task {
+  max-width: 380px;
+  margin: 1rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+
+.form h4 {
+  margin-bottom: 1rem;
+}
+
+.form button,
+.form a,
+.task button,
+.task a {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.main .title {
+  margin-bottom: 1rem;
+}
+
+.main li {
+  background-color: #dbdaef;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.main li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.actions {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.main .add-btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.main li:nth-child(1) {
+  background-color: #ffecec;
+}
+
+.main li:nth-child(2) {
+  background-color: #f1e2ff;
+}
+
+.main li:nth-child(3) {
+  background-color: #ffe1ce;
+}
+
+.main li:nth-child(4) {
+  background-color: #ffd8f3;
+}
+
+.main li:nth-child(5) {
+  background-color: #dff4ff;
+}
+
+/* preloader */
+.loader {
+  border: 0.8rem solid #dbdaef;
+  border-radius: 50%;
+  border-top: 0.8rem solid #6c5fbc;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
